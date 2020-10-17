@@ -1,0 +1,10 @@
+.wrapper{
+    width: var(--image-size);
+    height: var(--image-size);
+    display: inline-block;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+}
