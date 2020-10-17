@@ -1,0 +1,9 @@
+.wrapper {
+    margin-top: 3.5rem;
+    padding: 1rem;
+    transition: all 0.2s cubic-bezier(0.67, 0.02, 0, 1);
+}
+
+.wrapper:hover {
+    color: #ffc016;
+}
