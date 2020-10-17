@@ -1,12 +1,14 @@
 import React, { ReactNode } from 'react';
+import styles from './Layout.module.css';
+import { Header } from './Header';
 
 type Props = {
-    title: undefined | string;
     children: ReactNode;
 };
 
 export const Layout: React.FC<Props> = (props: Props) => (
-    <>
-        <main>{props.children}</main>
-    </>
+    <main className={styles.main}>
+        <Header />
+        <div className={styles.wrapper}>{props.children}</div>
+    </main>
 );
