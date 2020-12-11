@@ -1,7 +1,7 @@
 import React from 'react';
-import { DarkModeToggle } from 'components/DarkModeToggle';
-import { Typography } from 'components/Typography';
-import { Image } from 'components/Image';
+import { DarkModeToggle } from 'modules/DarkModeToggle';
+import { Typography } from 'modules/Typography';
+import { Image } from 'modules/Image';
 import styles from './Header.module.css';
 
 const HEADER_TITLE = 'Theodore Chernin';

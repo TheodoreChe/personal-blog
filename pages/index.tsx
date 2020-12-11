@@ -1,8 +1,8 @@
 import React from 'react';
 import { GetStaticProps } from 'next';
 import { getPost, Post } from 'lib/markdown';
-import { Layout } from 'components/Layout';
-import { List } from 'components/Post';
+import { Layout } from 'modules/Layout';
+import { List } from 'modules/Post';
 
 type Props = {
     postList: Array<Post>;

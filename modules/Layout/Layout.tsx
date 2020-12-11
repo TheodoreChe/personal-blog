@@ -1,7 +1,7 @@
 import React from 'react';
 import { TYPE_OF_THEME } from 'constants/style';
-import { AppContext } from '../AppProvider/AppProvider';
-import { Breadcrumb } from '../Breadcrumb';
+import { AppContext } from 'modules/AppProvider/AppProvider';
+import { Breadcrumb } from 'modules/Breadcrumb';
 import { Header } from './components';
 import styles from './Layout.module.css';
 

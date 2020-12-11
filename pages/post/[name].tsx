@@ -2,8 +2,8 @@ import React from 'react';
 import { GetStaticProps, GetStaticPaths } from 'next';
 import ReactMarkdown from 'react-markdown';
 import { getPost, Post } from 'lib/markdown';
-import { Layout } from 'components/Layout';
-import { Content, Header } from 'components/Post';
+import { Layout } from 'modules/Layout';
+import { Content, Header } from 'modules/Post';
 
 type Props = {
     post: Post;

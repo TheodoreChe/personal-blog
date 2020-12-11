@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Post } from 'lib/markdown';
-import { Typography } from 'components/Typography';
+import { Typography } from 'modules/Typography';
 import styles from './Preview.module.css';
 
 type Props = {

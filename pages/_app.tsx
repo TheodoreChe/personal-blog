@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import { AppProps } from 'next/app';
 import '../styles/globals.css';
-import { AppProvider } from 'components/AppProvider';
+import { AppProvider } from 'modules/AppProvider';
 
 const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => (
     <AppProvider>
