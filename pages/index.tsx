@@ -1,28 +1,28 @@
 import React from 'react';
 import { GetStaticProps } from 'next';
 import { getPost, Post } from 'lib/markdown';
-import { Layout } from 'components/layout';
-import { PostList } from 'components/postList';
+import { Layout } from 'components/Layout';
+import { List } from 'components/Post';
 
 type Props = {
     postList: Array<Post>;
 };
 
-const Home: React.FC<Props> = (props: Props) => {
+const HomePage: React.FC<Props> = (props: Props) => {
     return (
-        <Layout>
-            <PostList postList={props.postList} />
+        <Layout withHeader>
+            <List postList={props.postList} />
         </Layout>
     );
 };
 
 const getStaticProps: GetStaticProps = async () => {
-    const postNameList = require
+    const paths = require
         .context('markdown/posts')
         .keys()
-        .map((k: string) => k.match(/\.\/(.*)\./)?.[1]);
+        .map((path: string) => path.match(/\.\/(.*)\./)?.[1]);
 
-    const postList = await Promise.all(postNameList.map(getPost));
+    const postList = await Promise.all(paths.map(getPost));
 
     return {
         props: {
@@ -31,5 +31,4 @@ const getStaticProps: GetStaticProps = async () => {
     };
 };
 
-export { getStaticProps };
-export default Home;
+export { HomePage as default, getStaticProps };

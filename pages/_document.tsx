@@ -6,13 +6,12 @@ export default class MyDocument extends Document {
         return (
             <Html lang="en">
                 <Head>
-                    <title>Theodore Che</title>
                     <link
                         rel="stylesheet"
                         href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
                     />
                 </Head>
-                <body className="dark">
+                <body>
                     <Main />
                     <NextScript />
                 </body>
