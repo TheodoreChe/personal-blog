@@ -1,7 +1,13 @@
 .wrapper {
     margin-top: 3.5rem;
-    padding: 1rem;
+    border-top: 1px solid #1CD5BD;
     transition: all 0.2s cubic-bezier(0.67, 0.02, 0, 1);
+    cursor: pointer;
+}
+
+.link {
+    display: block;
+    padding: 1rem;
 }
 
 .wrapper:hover {
