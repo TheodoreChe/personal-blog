@@ -46,7 +46,7 @@ export const FFmpegExample = () => {
                     <input type="file" onChange={doTranscode} />
                     Create Boomerang
                 </label>
-                {videoSrc && <video src={videoSrc} controls></video>}
+                <div className={styles.video}>{videoSrc && <video src={videoSrc} controls></video>}</div>
             </div>
             <div className={styles.background}>
                 <div className={styles.inner}>
