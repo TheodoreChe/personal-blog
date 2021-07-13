@@ -8,10 +8,10 @@ type Props = {
     postList: Array<Post>;
 };
 
-const HomePage: React.FC<Props> = (props: Props) => {
+const HomePage: React.FC<Props> = ({ postList }: Props) => {
     return (
         <Layout withHeader>
-            <List postList={props.postList} />
+            <List postList={postList} />
         </Layout>
     );
 };

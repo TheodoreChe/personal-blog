@@ -5,13 +5,13 @@ import { Image } from 'modules/Image';
 import styles from './Header.module.css';
 
 const HEADER_TITLE = 'Theodore Chernin';
-const HEADER_DESC = 'Personal blog';
+const HEADER_DESC = '';
 
 export const Header: React.FC = () => (
     <header className={styles.header}>
         <div className={styles.wrapper}>
             <div className={styles.avatar}>
-                <Image src="/assets/theodore.chernin.png" alt="Theodore Chernin Avatar" />
+                <Image src="/assets/theodore.chernin.jpeg" alt="Theodore Chernin Avatar" />
             </div>
             <div>
                 <Typography as="h1" color="gradient" size="small">
