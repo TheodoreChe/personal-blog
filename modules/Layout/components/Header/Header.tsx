@@ -11,7 +11,7 @@ export const Header: React.FC = () => (
     <header className={styles.header}>
         <div className={styles.wrapper}>
             <div className={styles.avatar}>
-                <Image src="/assets/theodore.chernin.jpeg" alt="Theodore Chernin Avatar" />
+                <Image src="/assets/theodore.chernin.jpg" alt="Theodore Chernin Avatar" />
             </div>
             <div>
                 <Typography as="h1" color="gradient" size="small">
