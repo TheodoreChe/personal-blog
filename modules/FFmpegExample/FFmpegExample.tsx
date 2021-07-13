@@ -14,7 +14,7 @@ export const FFmpegExample = () => {
 
     useEffect(() => {
         Hook(window.console, (log) => setLogs((currLogs) => [...currLogs, log]), false);
-        return () => Unhook(window.console);
+        return () => Unhook(window.console as any);
     }, []);
 
     const loadFFmpeg = async () => {
