@@ -10,6 +10,7 @@
   "dependencies": {
     "@ffmpeg/core": "^0.10.0",
     "@ffmpeg/ffmpeg": "^0.10.1",
+    "console-feed": "^3.2.2",
     "gray-matter": "^4.0.2",
     "next": "^11.0.1",
     "raw-loader": "^4.0.2",

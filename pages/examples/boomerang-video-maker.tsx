@@ -1,7 +1,7 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 
-const FFmpegProcessing = dynamic(() => import('modules/FFmpegProcessing'), {
+const FFmpegProcessing = dynamic(() => import('modules/FFmpegExample'), {
     ssr: false,
 });
 
